@@ -14,10 +14,10 @@ st.set_page_config(
     layout="centered",  # Page layout option
 )
 
-GOOGLE_API_KEY = os.getenv("AIzaSyBggQl8vACqMb07oiOz9YhF9eFQeiKbf60")
+GOOGLE_API_KEY = os.getenv("")
 
 # Set up Google Gemini-Pro AI model
-gen_ai.configure(api_key="AIzaSyBggQl8vACqMb07oiOz9YhF9eFQeiKbf60")
+gen_ai.configure(api_key="")
 model = gen_ai.GenerativeModel('gemini-pro')
 
 
@@ -54,4 +54,5 @@ if user_prompt:
     # Display Gemini-Pro's response
     with st.chat_message("assistant"):
         st.markdown(gemini_response.text)
+
 
